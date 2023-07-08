@@ -20,7 +20,7 @@ async function mostrar_data(datos) {
     <div class="row d-flex justify-content-center m-3">
         <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" class="col-sm-4 border border-secondary border-3">
         <div class="card-body">
-          <h5 class="card-title fw-bold fs-2">Clima en ${ciudad}</h5>
+          <h5 class="card-title fw-bold fs-2 m-3">Clima en ${ciudad}</h5>
         </div>
         <ul class="col-sm-6 list-group list-group-flush fw-bold fs-3">
           <li class="list-group-item">${data.weather[0].description}</li>
