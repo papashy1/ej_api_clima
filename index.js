@@ -18,17 +18,15 @@ async function mostrar_data(datos) {
     const card = document.createElement('div');
     card.innerHTML = `
     <div class="row d-flex justify-content-center m-3">
-      <div class="card col-sm-7 col-3">
-        <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" class="card-img-top">
+        <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" class="col-sm-4 border border-secondary border-3">
         <div class="card-body">
           <h5 class="card-title fw-bold fs-2">Clima en ${ciudad}</h5>
         </div>
-        <ul class="list-group list-group-flush fw-bold fs-3">
+        <ul class="col-sm-6 list-group list-group-flush fw-bold fs-3">
           <li class="list-group-item">${data.weather[0].description}</li>
           <li class="list-group-item">Humedad: ${data.main.humidity} %💧</li>
           <li class="list-group-item">Temperatura: ${data.main.temp} c°🌡</li>
         </ul  >
-      </div>
     </div>
   `
   escribir_card.appendChild(card);
