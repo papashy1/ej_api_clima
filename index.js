@@ -18,7 +18,7 @@ async function mostrar_data(datos) {
     const card = document.createElement('div');
     card.innerHTML = `
     <div class="row d-flex justify-content-center m-3">
-      <div class="card col-sm-7 col-3" style="width: 20rem;">
+      <div class="card col-sm-7 col-3">
         <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title fw-bold fs-2">Clima en ${ciudad}</h5>
